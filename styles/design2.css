@@ -1,0 +1,52 @@
+/*Sizing chitkara university*/
+body > header > h1{
+    font-size: 4em;
+}
+/*for top-right contacts*/
+body > aside > pre {
+   padding: 1px 20px;
+   margin: 5px 600px;
+}
+/*sizing header*/
+body > header{
+    margin: 0px 50px;
+}
+
+/*for moving text*/
+body > marquee {
+    font-size: 30px;
+    font-style: italic; 
+}
+
+/*for visited link of moving text*/
+body > marquee > a:visited{
+    color: red;
+}
+/*changing color of moving text link*/
+body > marquee > a:hover{
+    color: black;
+}
+/*for navigation of clubs*/
+body > section > ul > li > div > .clubs {
+    display: inline-block;
+}
+/*for navigation of societies*/
+body > section > ul > li > div > .societies {
+    display: inline-block;
+}
+/*for content under navigation bar of the website*/
+.data {
+   padding: 50px;
+   margin-left: 30px;
+   margin-right: ;
+   
+   float: left;
+}
+#every{
+    display: block;
+    padding: 100px;
+
+}
+#middle{
+    width: 800px;
+}
