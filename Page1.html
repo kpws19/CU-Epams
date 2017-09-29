@@ -28,22 +28,22 @@
                    <form class="modal-content animate" action="/action_page.php">
                        <div class="container">
                          <img src="images2/chitkaralogo.png" alt="chitkara logo" class="avatar" id="chitkaralogo"/><br />
-                         <label><b>Name:</b></label>
+                         <label><b>Name:</b><span style="color: red;">*</span></label>
                           <input type="text" placeholder="Enter your Name" name="name" required>
-                          <label><b>Roll No.:</b></label><br />
+                          <label><b>Roll No.:</b><span style="color: red;">*</span></label><br />
                           <input type="number" placeholder="Enter your Roll No." max="9999999999" name="rollno" required><br />
-                          <label><b>Email Address:</b></label><br />
+                          <label><b>Email Address:</b><span style="color: red;">*</span></label><br />
                           <input type="email" placeholder="Enter your email address" name="emailaddress" required><br />
-                          <label><b>Stream:</b></label>
+                          <label><b>Stream:</b><span style="color: red;">*</span></label>
                           <input type="text" placeholder="Enter your Stream" name="stream" required><br />
-                          <label><b>Date of Birth:</b></label><br />
-                          <input type="date" min="19-10-1998" max="18-10-2017" required><br />
+                          <label><b>Date of Birth:</b><span style="color: red;">*</span></label><br />
+                          <input type="date" min="19-10-1998" max="18-10-2017" placeholder="19-10-1998" required><br />
                           <label><b>Gender:</b></label><br />
                           <input type="radio" id="Male" name="gender" /><label>Male</label>
                           <input type="radio" name="gender" id="Female" /><label>Female</label>
                           <br /><br />
                           <label><b>Phone No.</b></label>
-                          <input type="number" placeholder="enter phone no." min="0000000000" max="9999999999" required><br />
+                          <input type="number" placeholder="enter phone no." min="0000000000" max="9999999999" maxlength="10" required><br />
                           <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
                            <div class="clearfix">
                               <button type="submit" class="signupbtn">Sign Up</button>
