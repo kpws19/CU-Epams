@@ -1,0 +1,87 @@
+body > header {
+    text-align: center;
+    font-size: 4em;
+    font-weight: bold;
+}
+@font-face {
+    font-family: BANKGOTHIC MD BT;
+    src:url('../fonts/BANKGOTHIC MD BT.TTF') format('truetype');
+}
+
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+/*for cards*/
+body > article > div > div.column {
+      float: left;
+      width: 25%;
+      margin-bottom: 16px;
+      padding: 0 8px;
+}
+.column{
+    margin: 0 55px;
+}
+/*for small screens*/
+@media (max-width: 650px) {
+    body > article > div > div.column {
+        width: 100%;
+        display: block;
+    }
+}
+/*for card shadow*/
+body > article > div > div > div.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.container {
+    padding: 0 16px;
+}
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/*color of the title*/
+.title {
+    color: grey;
+}
+/*style for contact button*/
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+    width: 100%
+}
+.button:hover {
+    background-color: #555;
+}
+/*centering image*/
+.banner {
+     margin: 90px;
+} 
+/*MARK 4 LOGO*/
+.marklogo{
+    margin: 20px;
+    margin-top: 0px;
+    margin-left: 500px;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.company{
+    font-size: 6em;
+    text-align: center;
+}
+
