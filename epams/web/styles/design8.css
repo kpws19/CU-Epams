@@ -1,0 +1,56 @@
+/*for inside navigation tabs*/
+/* Style the tab */
+div.toffeetab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    
+}
+
+/* Style the buttons inside the tab */
+div.toffeetab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+div.toffeetab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.toffeetab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.toffeecontent {
+    display: none;
+    padding-bottom: 6px;
+    padding-right: 2px;
+    padding-left: 12px;
+    padding-top: 6px;
+    border: 1px solid #ccc;
+    border-top: none;
+    margin-left: -15px;
+    margin-right: 40px;
+}
+.toffeecontent > img.personal {
+    border-radius: 10px;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+.toffeecontent > input {
+    padding: 8px 35px;
+    margin: 5px;
+}
+section {
+    margin-left: 165px;
+    margin-right: 175px;
+}
