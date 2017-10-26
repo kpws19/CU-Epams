@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="screen.css" />
+</head>
+<body>
+  <div id="particles-js">
+    <!--CUEPAMS LOGO-->
+    <div class="side">
+      <aside>CU-Epams</aside>
+    </div>
+<!--LOGIN FORM-->
+    <div id="login">
+      <form>
+        <div>
+          <label for="username">Username:</label>
+          <br/>
+          <input type="text" placeholder="Username" maxlength="25" required/>
+        </div>
+        <div>
+          <label for="password">Password:</label>
+          <br/>
+          <input type="password" placeholder="Password" maxlength="25" required/>
+          <br/>
+          <span class="under">Forget password?</span>
+        </div>
+        <div id="buttoner">
+        <input type="submit" value="LOG IN" id="button"/>
+        <p id="last">Not registered? <a href="page.html">Create an account</a></p>
+        </div>
+      </form>
+    </div>
+    <div id="footdiv">
+      Founded by MARK-IV
+    </div>
+  </div>
+<!-- ALTERNATE USE
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js">
+  </script>
+-->
+  <script src="particles.min.js">
+  </script>
+  <script>
+  particlesJS.load('particles-js','particles.json',function(){
+    console.log('particles.json loaded..');
+  })
+  </script>
+</body>
+</html>
