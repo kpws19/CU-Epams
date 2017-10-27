@@ -1,0 +1,99 @@
+/*FOR PARTICLES BACKGROUND*/
+#particles-js{
+  background-image: url("loginpage.jpg");
+  height: ;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*Using external fonts*/
+@font-face {
+    font-family: "Samarkan";
+    src: url('SAMARN__.TTF');
+}
+/*FOR CUEPAMS LEFT SIDE*/
+.side > aside{
+    color: darkslategray;
+    font-size: 2.8em;
+    margin-left: 5%;
+    font-family: Samarkan;
+    position: absolute;
+    top: 5%;
+}
+/*CHANGING THE LOGIN*/
+body{
+  margin: 0%;
+  color: #333;
+  font-size: 20px;
+}
+/*DESIGN FOR LOGIN BOX*/
+#login{
+  background: transparent;
+  opacity: 0.9;
+  padding: 2em;
+  position: absolute;
+  top: 10%;
+  left:40%;
+  text-align: center;
+}
+/*STYLING INPUT TYPE*/
+#login input[type="text"],#login input[type="password"]{
+  padding: 4%;
+  text-align: center;
+  background-color: inherit;
+  border-radius: 10px;
+  box-shadow: 10px 4px 150px mediumblue;
+  border: 1px solid #4A4A4A;
+  font-size: 18px;
+}
+/*STYLING INPUT ON FOCUS*/
+#login input[type="text"]:focus,#login input[type="password"]:focus{
+  background: #4A4A4A;
+}
+/*STYLING INPUTS PLACEHOLDER*/
+#login input[placeholder]{
+  font-style:;
+}
+/*STYLING INPUTS PLACEHOLDER ON FOCUS*/
+#login input[placeholder]:focus{
+  color: white;
+  font-weight: bold;
+}
+/*STYLING BUTTON STYLE*/
+#button{
+  border-radius: 11px;
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: orangered;
+  color: #fff;
+  border: 0px;
+  font-weight: bold;
+}
+/*LOGIN BUTTON ON HOVER*/
+#button:hover{
+  background-color: red;
+}
+/*STYLING BUTTON DIV*/
+#buttoner{
+  text-align: center;
+  padding: 10px;
+}
+/*PARA UNDER INPUT*/
+.under{
+  color: white;
+  font-weight: bold;
+  text-align: right;
+  font-size: 15px;
+}
+/*LAST PARA*/
+#last{
+  font-size: 16px;
+  color: black;
+}
+/*STYLING FOOTER*/
+#footdiv{
+  color: white;
+  position: absolute;
+  bottom: 5%;
+  font-size: 18px;
+}
