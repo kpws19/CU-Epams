@@ -1,0 +1,47 @@
+/*FOR ALERTS*/
+/*for footer links*/
+.links{
+    display: inline-block;
+}
+.links:hover{
+    opacity: 0.7;
+}
+/*CHANGING COLORS OF RIGHT FOOTER*/
+.fl_right{
+    color: black;
+}
+/*CHANGING COLORS OF LEFT FOOTER*/
+.fl_left{
+    color: black;
+}
+/*CHANGING STYLES OF LOGOUT BUTTON*/
+.logoutbutton{
+    color: lightgrey;
+    margin-left: 580px;
+    background-color: transparent;
+    border: none;
+    margin-top: 0px;
+    padding: 0px;
+}
+.logoutbutton:hover{
+    color: white;
+}
+/* FOR CHECKBOX*/
+.checkbox{
+    height: 20px;
+    width: 20px;
+}
+marquee{
+    font-size: 25px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+.alert:hover{
+   color: blue;
+}
+.alert:active{
+    color: red;
+}
+
