@@ -10,6 +10,7 @@
 <script type="text/javascript" src="layout/scripts/jquery.jcarousel.setup.js"></script>
 <link rel="shortcut icon" type="image/x-icon" href="icons/imgicon.ico" />
 <link rel="stylesheet" href="styles/design20.css" />
+<script src="js/script6.js" type="text/javascript"></script>
 </head>
 <body id="top">
 <!-- FOR HEADER AND NAVIGATION BAR-->
@@ -32,15 +33,168 @@
             <li><a href="societies.html">Societies</a></li>
           </ul>
         </li>
-        <li><a href="">Personal Info.</a></li>
+        <li class="tab">
+          <a href="#" class="tablinks" onclick="openCity(event,'London')">Personal Info.</a>
+        </li>
         <li class="last"><a href="gallery.html">Gallery</a></li>
       </ul>
     </div>
     <br class="clear" />
   </div>
 </div>
+<!--this is ase hi-->
+<div id="gaurav">
+  <br/><br/><br/><br/><br/>
+</div>
+<!--###################### personal info ####################################-->
+<div id="London" class="tabcontent">
+           <span onclick="this.parentElement.style.display='none'" class="topright">x</span>
+           <!--Personal Info.-->
+           <div class="toffeetab">
+               <button class="toffee" onclick="personalcontent()">Personal Details</button><!--problem-openDetail(event, 'Personal Details')-->
+               <button class="toffee" onclick="openDetail(event, 'Student Clubs')">Student Clubs</button>
+               <button class="toffee" onclick="openDetail(event, 'Messages and Tasks')">Messages and Tasks</button>
+               <button class="toffee" onclick="openDetail(event, 'Shirt Registration')">Shirt Registration</button>
+               <button class="toffee" onclick="openDetail(event, 'Settings')">Settings</button>
+               <button class="toffee" onclick="openDetail(event, 'Report')">Report</button>
+               <button class="toffee" onclick="openDetail(event, 'Sign Up for Clubs')">Sign Up for Clubs</button>
+           </div>
+           <div id="data">
+             hwllo world
+             <img src="" alt="add pic here" height="150px" width="150px" class="personal" align="right"  /> <br /><br />
+             User Name:<input type="text" value="" disabled /><br />
+             Roll No.: <input type="number" value="" disabled /><br />
+             Email Address:<input type="email" value="" disabled /><br />
+             Stream:<input type="text" value="" disabled /><br />
+             Date of Birth:<input type="date" min="19-10-1998" max="18-10-2017" disabled /><br />
+             Gender:
+             <input type="radio" name="male" checked disabled/>Male
+             <input type="radio" name="female" disabled/>Female
+             <br />
+             Phone No.: <input type="number" min="0000000000" max="9999999999" disabled/><br /><br />
+             <input type="submit" name="submit" value="Edit Info." />
+           </div>
+           <!--Creating tabs content-->
+           <!--Personal Details tabcontent -->
+           <div id="Personal Details" class="toffeecontent" >
+              <!--
+             hwllo world
+             <img src="" alt="add pic here" height="150px" width="150px" class="personal" align="right"  /> <br /><br />
+             User Name:<input type="text" value="" disabled /><br />
+             Roll No.: <input type="number" value="" disabled /><br />
+             Email Address:<input type="email" value="" disabled /><br />
+             Stream:<input type="text" value="" disabled /><br />
+             Date of Birth:<input type="date" min="19-10-1998" max="18-10-2017" disabled /><br />
+             Gender:
+             <input type="radio" name="male" checked disabled/>Male
+             <input type="radio" name="female" disabled/>Female
+             <br />
+             Phone No.: <input type="number" min="0000000000" max="9999999999" disabled/><br /><br />
+             <input type="submit" name="submit" value="Edit Info." />
+           -->
+          </div>
+
+          <!--Students joined club tabcontent -->
+          <div id="Student Clubs" class="toffeecontent">
+              <br /><br /><br />
+              You are not in any club/s and society/es.
+              <br /><br /><a href="#">Sign Up for Clubs </a><br />
+          </div>
+
+          <!--Messages and Tasks tabcontent -->
+          <div id="Messages and Tasks" class="toffeecontent">
+              <br />
+              personal messages
+              <br /><br />
+              <a href="#">Manage Tasks</a>
+              <br />
+          </div>
+
+          <!--Shirt Registration tabcontent -->
+          <div id="Shirt Registration" class="toffeecontent">
+              <br />
+              You have not registered for shirt.
+              <button type="button">Click here for Shirt Registration</button>
+              <br />
+          </div>
+
+          <!--Settings tabcontent -->
+          <div id="Settings" class="toffeecontent">
+
+              <h3>Notifications</h3>
+              Email Facility:
+               <!-- Rounded switch -->
+               <label class="switch">
+               <input type="checkbox" disabled>
+               <div class="slider round"></div>
+               </label><br />
+              SMS Facility:
+              <!-- Rounded switch -->
+               <label class="switch">
+               <input type="checkbox" disabled>
+               <div class="slider round"></div>
+               </label><br />
+               Show Login History:
+               <!-- Rounded switch -->
+               <label class="switch">
+               <input type="checkbox" disabled>
+               <div class="slider round"></div>
+               </label><br />
+               <h2>Privacy</h2><br />
+               <button type="button">Change Settings</button><br /><br />
+               <a href="#">Advanced Settings</a>
+          </div>
+
+          <!--Report tabcontent -->
+          <div id="Report" class="toffeecontent">
+              <div class="upreport">
+                  <h2>My info.</h2>
+                  User Name:<input type="text" value="" disabled/><br />
+                  Email Address:<input type="email" value="" disabled/><br />
+              </div>
+              <div class="upreport">
+                  <form>
+                  <h2>Block Person Info.</h2>
+                    User Name:<input type="text" name="xxxxxxx" placeholder="Write username here" required/><br />
+                    Roll No.:<input type="number" name="9999999" placeholder="Enter Roll No. here" required/><br />
+                    Action:
+                    <select required>
+                        <option value="Check this Account">Check this Account</option>
+                        <option value="Block the Account">Block the Account</option>
+                        <option value="Create Spam for the Account">Create Spam for the Account</option>
+                        <option value="Scan this Account">Scan this Account</option>
+                    </select>
+                    <br /><br />
+                    <input type="submit" value="Report" />
+                  </form>
+              </div>
+              <div class="downreport">
+                  <h2>Feedback</h2>
+                  <textarea rows="5" cols="70" maxlength="150">
+                  </textarea><br /><br />
+                  <input type="submit" value="save" />
+                  <input type="submit" value="submit" /><br /><br />
+                  <a href="#">Advanced Feedback</a>
+              </div>
+              <div class="downreport">
+                  <h2>Suggestion Box</h2>
+                  <textarea rows="25" cols="40" required="required" maxlength="200"></textarea><br /><br />
+                  <input type="submit" value="submit" />
+              </div>
+          </div>
+
+          <!--Sign Up for Clubs tabcontent -->
+          <div id="Sign Up for Clubs" class="toffeecontent">
+              <br />
+              To enroll in any club or society you want to Sign Up
+              <br /><br />
+              <button type="button">Sign Up</button>
+              <br /><br />
+         </div>
+</div>
+<!--############################# PERSONNAL INFO ENDED #############################################-->
 <!-- FOR SLIDESHOW SHOWING UPCOMING EVENTS-->
-<div class="wrapper col2">
+<div class="wrapper col2" id="hide">
   <div id="featured_slide">
     <div id="featured_content">
       <ul>
@@ -108,7 +262,7 @@
 </div>
 <a href="feedback.php"><img src="images2/feedback.jpg" align="right" alt="feedback" height="110px" width="50px" class="feedbackimage"/></a>
 <!-- RECENT EVENTS RECENT EVENTS RECENT EVENTS RECENT EVENTS RECENT EVENTS RECENT EVENTS RECENT EVENTS -->
-<div class="wrapper col3">
+<div class="wrapper col3" id="hides">
   <div id="container">
     <h1>Recent Events</h1>
     <div class="homepage">
@@ -137,7 +291,7 @@
     </div>
   </div>
 </div>
-<!-- BLACK FOOTER BLACK FOOTER BLACK FOOTER BLACK FOOTER BLACK FOOTER BLACK FOOTER BLACK FOOTER BLACK FOOTER BLACK FOOTER-->
+<!-- BLACK FOOTER B FOOTER-->
 <div class="wrapper col4">
   <div id="footer">
     <div class="box1">
