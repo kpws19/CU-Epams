@@ -42,7 +42,14 @@ function permanentdelete()
 function movetotrash()
 {
     document.getElementById('trash').style.display="none";
-    document.getElementById('trash-half').style.display="inline";
+    if(count<=10)
+    {
+        document.getElementById('trash-half').style.display="inline";
+    }
+    else
+    {
+        document.getElementById('trash-full').style.display="inline";
+    }
     permanentdelete();
 }
 //MOVE TO SPAM
