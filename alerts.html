@@ -9,6 +9,7 @@
 <script type="text/javascript" src="layout/scripts/jquery.jcarousel.setup.js"></script>
 <link rel="shortcut icon" type="image/x-icon" href="icons/imgicon.ico" />
 <link rel="stylesheet" href="styles/design24.css" />
+<script type="text/javascript" src="js/script7.js"></script>
 </head>
 <body id="top">
 <!-- NAVIGATION BAR -->
@@ -45,24 +46,54 @@
 <!--SHOWING ALERTS SHOWING ALERTS SHOWING ALERTS-->
 <div class="wrapper col3">
   <div id="container">
-    <h1><input type="checkbox" class="checkbox"/>CUDC-2017</h1>
-    <p>The Chitkara University is going to organised CUDC on <b>13 May,2017</b>. For more details <a href="cudc17.html">Click Here</a></p>
-    <p><a href="https://feeshub.com/product/chitkara-university-doctoral-consortium-2017-cudc-2017/">Click Here for Registration</a></p>
-    <h1><input type="checkbox" class="checkbox"/>second Notifications</h1>
-    <p>fgbfgbbcfjj djj jddsldskf fdskjfsd  kjfsd</p>
-    <h1><input type="checkbox" class="checkbox"/>third Notifications</h1>
-    <p>sdfsdlkfs dsflsdf sdfjsdfl sdfjsdfs</p>
-    <h1><input type="checkbox" class="checkbox"/>four Notifications</h1>
-    <p>dbsdfs dsfjsdkfsd fdsskfkfjdd fdsfksdfds</p>
-    <h1><input type="checkbox" class="checkbox"/>five Notifications</h1>
-    <p>bgsdgbbgsddsfdkjf dsfkskfslnsdfoanfwof saiofnosg fsoisd</p>
-    <h1><input type="checkbox" class="checkbox"/>sixth Notifications</h1>
-    <p>bgfsgfbgfbfdsfps dsgfjsofg fosifd osdngfs dgosg sfofs </p>
-    <div>
-      <button type="button">Mark all as read</button>
-      <button type="button">Permanent Delete</button>
-      <button type="button"><img src="" height="100px" width="100px"/>Move to trash</button>
+    <div id="upperalerts">
+      <div class="checkhere" style="color: blue;">
+        <h1><input type="checkbox" class="checkbox"/>CUDC-2017</h1>
+        <p>The Chitkara University is going to organised CUDC on <b>13 May,2017</b>. For more details <a href="cudc17.html">Click Here</a></p>
+        <p><a href="https://feeshub.com/product/chitkara-university-doctoral-consortium-2017-cudc-2017/">Click Here for Registration</a></p>
+      </div>
+      <div class="checkhere">
+        <h1><input type="checkbox" class="checkbox"/>second Notifications</h1>
+        <p>fgbfgbbcfjj djj jddsldskf fdskjfsd  kjfsd</p>
+      </div>
+      <div class="checkhere">
+        <h1><input type="checkbox" class="checkbox"/>third Notifications</h1>
+        <p>sdfsdlkfs dsflsdf sdfjsdfl sdfjsdfs</p>
+      </div>
+      <div class="checkhere">
+        <h1><input type="checkbox" class="checkbox"/>four Notifications</h1>
+        <p>dbsdfs dsfjsdkfsd fdsskfkfjdd fdsfksdfds</p>
+      </div>
+      <div class="checkhere">
+        <h1><input type="checkbox" class="checkbox"/>five Notifications</h1>
+        <p>bgsdgbbgsddsfdkjf dsfkskfslnsdfoanfwof saiofnosg fsoisd</p>
+      </div>
+      <div class="checkhere">
+        <h1><input type="checkbox" class="checkbox"/>sixth Notifications</h1>
+        <p>bgfsgfbgfbfdsfps dsgfjsofg fosifd osdngfs dgosg sfofs </p>
+      </div>
+      <div class="checkhere">
+        <h1><input type="checkbox" class="checkbox"/>seven Notifications</h1>
+        <p>bgfsgfbgfbfdsfps dsgfjsofg fosifd osdngfs dgosg sfofs </p>
+      </div>
     </div>
+    <div id="downalerts">
+        <div>
+          <button type="button" onclick="allselected()">Select All</button>
+        </div>
+        <div id="middle" style="display: none">
+          <button type="button" onclick="allread()">Mark all as read</button>
+          <button type="button" onclick="permanentdelete()">Permanent Delete</button>
+          <button type="button" onclick="movetotrash()">Move to trash</button>
+          <button type="button" onclick="movetospam()">Move to Spam</button>
+        </div>
+        <div>
+          <input type="image" height="50px" width="50px" src="images2/trash-icon.png" alt="trash" id="trash"/>
+          <input type="image" height="50px" width="50px" src="images2/recycle_bin.png" alt="trash-half" id="trash-half" style="display: none"/>
+          <input type="image" height="50px" width="50px" src="images2/Recycle-Bin.png" alt="trash-full" id="trash-full" style="display: none"/>
+          <input type="image" height="50px" width="50px" src="images2/index.jpeg" id="spam"/>
+        </div>
+      </div>
   </div>
 </div>
 <!-- BLACK FOOTER BLACK FOOTER BLACK FOOTER BLACK FOOTER BLACK FOOTER BLACK FOOTER  -->
