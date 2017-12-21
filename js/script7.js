@@ -1,5 +1,18 @@
 var count=0;
-//FUCNTION FOR SELECTING ALL ALERTS
+var fg=0;
+for(var k=0;k<7;k++)
+{
+  if(document.getElementsByClassName('className')[k].checked==false)
+  {
+    fg=fg+1;
+  }
+}
+if(fg==6)
+{
+  document.getElementById('middle').style.display="none";
+}
+//###################################################################################//
+//FUNCTION FOR SELECTING ALL ALERTS
 function allselected()
 {
   var i=0;
@@ -12,6 +25,9 @@ function allselected()
     a.setAttribute("checked","checked");
     document.getElementsByClassName('checkhere')[i].setAttribute("style","color: black");
     document.getElementsByClassName('checkhere')[i].style.backgroundColor="rgb(123, 251, 248)";
+    document.getElementsByClassName('checkhere')[i].style.border="1px solid black";
+    //document.getElementsByClassName('checkhere')[i].style.margin="10px";
+    document.getElementsByClassName('checkhere')[i].style.borderRadius="5px";
     document.getElementsByClassName('checkhere')[0].style.color="blue";
     count++;
     if(document.getElementsByClassName('checkhere')[i] == null)
@@ -35,7 +51,10 @@ function permanentdelete()
   var i;
   for(i=0;i<count;i++)
   {
+    if(document.getElementsByClassName('checkbox')[i].checked == true)
+    {
       document.getElementsByClassName('checkhere')[i].setAttribute("style","display: none;");
+    }
   }
 }
 //FUNCTION OR MOVE TO TRASH
@@ -57,4 +76,27 @@ function movetospam()
 {
   document.getElementById('spam').style.backgroundColor="red";
   permanentdelete();
+}
+//FUNCTION FOR IMPROVING CHECKBOX BUTTON
+function world()
+{
+  var j=0;
+  for(j=0;j<7;j++)
+  {
+    if(document.getElementsByClassName('checkbox')[j].checked == true)
+    {
+      document.getElementsByClassName('checkhere')[j].setAttribute("style","color: black");
+      document.getElementsByClassName('checkhere')[j].style.backgroundColor="rgb(123, 251, 248)";
+      document.getElementsByClassName('checkhere')[j].style.border="1px solid black";
+      document.getElementsByClassName('checkhere')[j].style.borderRadius="5px";
+      document.getElementById('middle').style.display="block";
+    }
+    else if(document.getElementsByClassName('checkbox')[j].checked == false)
+    {
+      document.getElementsByClassName('checkhere')[j].setAttribute("style","color: none");
+      document.getElementsByClassName('checkhere')[j].style.backgroundColor="none";
+      document.getElementsByClassName('checkhere')[j].style.border="none";
+      document.getElementsByClassName('checkhere')[j].style.borderRadius="none";
+    }
+  }
 }
