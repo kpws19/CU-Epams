@@ -23,7 +23,10 @@ function allselected()
 {
   var i=0;
   var a;
-  document.getElementById('middle').setAttribute("style","display: block");
+  if(document.getElementsByClassName('checkhere')[i] != null)
+  {
+      document.getElementById('middle').setAttribute("style","display: block");
+  }
   for(i=0;i<20;i++)
   {
     a = document.getElementsByClassName('checkbox')[i];
@@ -71,17 +74,19 @@ function movetotrash()
     if(count<=10)
     {
         document.getElementById('trash-half').style.display="inline";
+        document.getElementById('trash-full').style.display="none";
     }
     else
     {
         document.getElementById('trash-full').style.display="inline";
+        document.getElementById('trash-half').style.display="none";
     }
     permanentdelete();
 }
 //MOVE TO SPAM
 function movetospam()
 {
-  document.getElementById('spam').style.backgroundColor="red";
+  document.getElementById('spam').style.border="1px red solid";
   permanentdelete();
 }
 //FUNCTION FOR IMPROVING CHECKBOX BUTTON
