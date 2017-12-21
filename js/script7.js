@@ -1,16 +1,22 @@
 var count=0;
-var fg=0;
-for(var k=0;k<7;k++)
+function readed()
 {
-  if(document.getElementsByClassName('className')[k].checked==false)
+  var fg=0;
+  for(var k=0;k<7;k++)
   {
-    fg=fg+1;
+    if(document.getElementsByClassName('className')[k].checked==false)
+    {
+      fg=fg+1;
+    }
+  }
+  if(fg==7)
+  {
+    document.getElementById('middle').style.display="none";
   }
 }
-if(fg==6)
-{
-  document.getElementById('middle').style.display="none";
-}
+document.ready(function(){
+  readed();
+});
 //###################################################################################//
 //FUNCTION FOR SELECTING ALL ALERTS
 function allselected()
@@ -29,6 +35,7 @@ function allselected()
     //document.getElementsByClassName('checkhere')[i].style.margin="10px";
     document.getElementsByClassName('checkhere')[i].style.borderRadius="5px";
     document.getElementsByClassName('checkhere')[0].style.color="blue";
+    document.getElementsByClassName('checkbox')[i].checked="true";
     count++;
     if(document.getElementsByClassName('checkhere')[i] == null)
     {
@@ -81,6 +88,7 @@ function movetospam()
 function world()
 {
   var j=0;
+  var cnt=0;
   for(j=0;j<7;j++)
   {
     if(document.getElementsByClassName('checkbox')[j].checked == true)
@@ -97,6 +105,11 @@ function world()
       document.getElementsByClassName('checkhere')[j].style.backgroundColor="none";
       document.getElementsByClassName('checkhere')[j].style.border="none";
       document.getElementsByClassName('checkhere')[j].style.borderRadius="none";
+      cnt=cnt+1;
     }
+  }
+  if(cnt==7)
+  {
+      document.getElementById('middle').style.display="none";
   }
 }
