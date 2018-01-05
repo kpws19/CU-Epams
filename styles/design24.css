@@ -9,10 +9,14 @@
 /*CHANGING COLORS OF RIGHT FOOTER*/
 .fl_right{
     color: black;
+    font-style: italic;
+    font-size: 14px;
 }
 /*CHANGING COLORS OF LEFT FOOTER*/
 .fl_left{
     color: black;
+    font-style: italic;
+    font-size: 14px;
 }
 /*CHANGING STYLES OF LOGOUT BUTTON*/
 .logoutbutton{
@@ -47,4 +51,40 @@ marquee{
 /*ON SHOWING ALERTS*/
 .checkhere{
   margin: 15px;
+}
+/*FOR DOWN ALERTS*/
+.onedirection{
+  display: inline-block;
+}
+#onedirection_right{
+  margin-left: 60%;
+}
+#onedirection_left{
+  margin-left: 10%;
+}
+#downalerts-button{
+  background-color: #B2C629;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 5px;
+}
+#downalerts-button:hover{
+  background-color: #95AD19;
+}
+#middle{
+  /*border: 1px solid black;*/
+  background-color: #B2C629;
+  /*padding: 5px;*/
+}
+.middle-buttons{
+  background-color: #B2C629;
+  border: none;
+  padding: 20px;
+  padding-right: 72.4px;
+  padding-left: 72.4px;
+}
+.middle-buttons:hover{
+  background-color: #95AD19;
+  font-style: italic;
+  border-radius: 10px;
 }

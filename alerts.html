@@ -41,7 +41,7 @@
 <!--SCROLLING TEXT SCROLLING TEXT SCROLLING TEXT -->
 <div class="wrapper col2">
   <div id="breadcrumb">
-      <marquee scrollamount="5"><a href="cudc17.html" class="alert">CUDC 2017 (for PhD Students)</a></marquee>
+      <marquee scrollamount="5"><a href="#" class="alert">SHOWING RECENT ALERTS</a></marquee>
   </div>
 </div>
 <!--SHOWING ALERTS SHOWING ALERTS SHOWING ALERTS-->
@@ -78,21 +78,23 @@
         <p>bgfsgfbgfbfdsfps dsgfjsofg fosifd osdngfs dgosg sfofs </p>
       </div>
     </div>
+    <br/>
     <div id="downalerts">
-        <div>
-          <button type="button" onclick="allselected()">Select All</button>
+        <div class="onedirection" id="onedirection_left">
+          <button type="button" onclick="allselected()" id="downalerts-button">Select All</button>
         </div>
-        <div id="middle" style="display: none">
-          <button type="button" onclick="allread()">Mark all as read</button>
-          <button type="button" onclick="permanentdelete()">Permanent Delete</button>
-          <button type="button" onclick="movetotrash()">Move to trash</button>
-          <button type="button" onclick="movetospam()">Move to Spam</button>
-        </div>
-        <div>
+        <div class="onedirection" id="onedirection_right">
           <input type="image" height="50px" width="50px" src="images2/trash-icon.png" alt="trash" id="trash"/>
           <input type="image" height="50px" width="50px" src="images2/recycle_bin.png" alt="trash-half" id="trash-half" style="display: none"/>
           <input type="image" height="50px" width="50px" src="images2/Recycle-Bin.png" alt="trash-full" id="trash-full" style="display: none"/>
           <input type="image" height="50px" width="50px" src="images2/index.jpeg" id="spam"/>
+        </div>
+        <br/><br/>
+        <div id="middle" style="display: none">
+          <button type="button" onclick="allread()" class="middle-buttons">Mark all as read</button>
+          <button type="button" onclick="permanentdelete()" class="middle-buttons">Permanent Delete</button>
+          <button type="button" onclick="movetotrash()" class="middle-buttons">Move to trash</button>
+          <button type="button" onclick="movetospam()" class="middle-buttons">Move to Spam</button>
         </div>
       </div>
   </div>
@@ -126,7 +128,7 @@
 <!-- FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER-->
 <div class="wrapper col5">
   <div id="copyright">
-    <p class="fl_left">Founded by MARK-IV</p>
+    <p class="fl_left"><br/>Founded by MARK-IV<br/><br/></p>
     <p class="fl_right">
       <text>Follow us on</text>
       <a href="https://facebook.com/CU-Epams/">
