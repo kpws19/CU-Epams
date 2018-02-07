@@ -26,7 +26,7 @@ $(document).ready(function () {
             carousel.startAuto();
         });
 
-    };
+    }
 
     $('#featured_content').jcarousel({
         scroll: 1,
