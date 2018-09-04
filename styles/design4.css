@@ -1,40 +1,36 @@
-/*for first button*/
+/*for SIGNUP BUTTON button*/
 .first {
     background-color: cornflowerblue;
-    font-size: 20px;
+    font-size: 1.1vw;
     padding: 15px;
     border-radius: 5px;
     margin-top: -30px;
-    margin-bottom: 0px;
-    margin-right: 0px;
-    margin-left: 1130px;
+    /* margin-bottom: 0px; */
+    /* margin-right: 0px; */
+    /* margin-left: 1130px; */
     border-color: lightblue;
     color: white;
-
+    float: right;
 }
 /*changing colours for first button on hover*/
-.first:hover {
+/*for changing colours of the second button on hover*/
+.first:hover,.second:hover {
     background-color:darkcyan;
     border-radius: 5px;
     color: white;
 }
-/*for second button*/
+/*for second button -LOGIN BUTTON*/
 .second {
-    background-color: transparent;
-    font-size: 20px;
-    padding: 0px;
-    border-radius: 0px;
-    margin-right: 0px;
-    margin-left: 1155px;
-    margin-top: 30px;
-    margin-bottom: 0px;
+    background-color: cornflowerblue;
+    font-size: 1.1vw;
+    padding: 15px;
+    border-radius: 5px;
+    /* /* margin-right: 0px; */
+    /* margin-left: 1155px; */
+    margin-top: -30px;
+    /* margin-bottom: 0px; */
     color: white;
-
-}
-/*for changing colours of the second button on hover*/
-.second:hover{
-    color: darkcyan;
-
+    float: right;
 }
 /*for footer information*/
 footer {
@@ -73,7 +69,7 @@ body > ul > li{
 /*FOR CUEPAMS LEFT SIDE*/
 body > aside{
     color: darkslategray;
-    font-size: 2.8em;
+    font-size: 3vw;
     margin-left: 25px;
     font-family: Samarkan;
 }
@@ -81,8 +77,8 @@ body > aside{
 /*FOR UPPER PARAGRAPH*/
 body > section > p.uper{
    color: darkcyan;
-   font-size: 2.7em;
-   margin-left: 60px;
+   font-size: 3vw;
+   /* margin-left: 60px; */
    text-align: center;
    font-family: Bradley Hand ITC;
    font-weight: bold;
@@ -112,7 +108,7 @@ body > section > form > input.centeral[placeholder]{
     font-size: 20px;
     border: none;
 }
-/*FOR CHANGING SIGN UP BUTTON*/
+/*FOR CHANGING GUEST SIGN UP BUTTON*/
 body > section > form > button.third{
     font-size: 20px;
     color: white;
@@ -122,7 +118,7 @@ body > section > form > button.third{
     padding: 20px;
     background-color: orangered;
 }
-/*FOR SIGNUP BUTTON ON HOVER*/
+/*FOR GUEST SIGNUP BUTTON ON HOVER*/
 body > section > form > button.third:hover{
     background-color: red;
 }

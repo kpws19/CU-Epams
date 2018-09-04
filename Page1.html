@@ -20,8 +20,7 @@
         <br />
         <aside>CU-Epams</aside>
         <!--For signup form-->
-        <ul>
-            <li>
+        
                 <section>
                     <button  class="first" type="button" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">SIGNUP</button>
                     <div id="id01" class="modal">
@@ -63,23 +62,18 @@
                     </div>
                     <script type="text/javascript" src="js/script1.js"></script>
                 </section>
-            </li>
             <!--for signin form-->
-            <li>
                 <section>
                     <a href="sample pages/particles.html" style="color: white;text-decoration: none;"><button style="width:auto;" class="second" type="button">LOGIN</button></a>
                 </section>
-            </li>
-        </ul>
         <!--for guest logins-->
         <section>
-
             <p class="uper">Exceed your expectations here at CU-Epams.. </p>
-            <form>
-            <input class="centeral" type="text" placeholder="Full Name" name="Full Name" required/><br />
-            <input class="centeral" type="email" placeholder="Email Address" name="xxxxx@gmail.com" required/><br />
-            <button class="third">SIGN UP FOR GUEST</button>
-            <p class="lower">By signing up you'll be agreeing to our terms of <a href="#">service</a> and <a href="#">privacy policy</a>.</p>
+            <form action="php/guestlogin.php" method="GET" autocomplete="off">
+                <input class="centeral" type="text" placeholder="Full Name" name="Guest-Full-Name" required/><br />
+                <input class="centeral" type="email" placeholder="Email Address" name="Guest-Email" required/><br />
+                <button class="third">SIGN UP FOR GUEST</button>
+                <p class="lower">By signing up you'll be agreeing to our terms of <a href="#">service</a> and <a href="#">privacy policy</a>.</p>
             </form>
         </section>
         <br/><br/><br/><br/><br/><br/><br/><br/>

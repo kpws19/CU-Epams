@@ -1,3 +1,4 @@
+<!--FOR SIGNUP-->
 <?php
 echo "Name: ".$_POST["username"]."<br/>";
 echo "Roll No:  ".$_POST["rollno"]."<br/>";
